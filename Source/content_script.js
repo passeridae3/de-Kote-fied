@@ -52,7 +52,7 @@ function handleText(textNode)
 
 	//alor? you mean king, right?
 	v = v.replace(/\balor\b/g, "king");
-	v = v.replace(/\bKing\b/g, "King");
+	v = v.replace(/\bAlor\b/g, "King");
 	v = v.replace(/\bALOR\b/g, "KING");
 
 	// the bro-est king you ever saw
