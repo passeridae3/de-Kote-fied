@@ -39,10 +39,16 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	// Cody is Cody
+	v = v.replace(/\bKote\b/g, "Cody (in a weird accent)");
+	v = v.replace(/\bkote\b/g, "cody (in a weird accent)");
+
+	// vod means bro, bro
+	// there may be issues with VOD being replaced, if so that line may be removed
+	v = v.replace(/\bVod\b/g, "Bro");
+	v = v.replace(/\bvod\b/g, "bro");
+	v = v.replace(/\bVOD\b/g, "BRO");
+
 	
 	textNode.nodeValue = v;
 }
