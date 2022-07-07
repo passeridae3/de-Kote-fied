@@ -55,7 +55,12 @@ function handleText(textNode)
 	v = v.replace(/\bKing\b/g, "King");
 	v = v.replace(/\bALOR\b/g, "KING");
 
-	
+	// the bro-est king you ever saw
+	v = v.replace(/\bvod'alor\b/g, "bro-king");
+	v = v.replace(/\bVod'Alor\b/g, "Bro-King");
+	v = v.replace(/\bVod'alor\b/g, "Bro-king");
+	v = v.replace(/\bvod'Alor\b/g, "bro-King");
+
 	textNode.nodeValue = v;
 }
 
